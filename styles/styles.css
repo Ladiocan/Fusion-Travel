@@ -73,9 +73,6 @@ img {
     box-shadow: -1px 0px 6px -3px #999;
     -ms-flex-align: center;
 }
-input {
-   margin-left: 43%;
-}
 #special-children{
     align-self: baseline;
     float: left;
@@ -98,7 +95,7 @@ input {
 #special-img
 {
     height: 500px;
-    object-fit: none;
+    object-fit: cover;
 }
 .yellow-parent
 {
@@ -108,4 +105,13 @@ input {
     align-items: center;
     justify-content: center;
     height: 100px;
+}
+.searchbar
+{
+    border: white;
+    text-align: center;
+}
+#textright
+{
+    float: left;
 }
