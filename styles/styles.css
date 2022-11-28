@@ -111,7 +111,14 @@ img {
     border: white;
     text-align: center;
 }
-#textright
+#special-parent
 {
+    display: flex;
     float: left;
+    border: 10px;
+}
+.hr 
+{
+    margin-left: 15%;
+    margin-right: 15%;
 }
