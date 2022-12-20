@@ -200,6 +200,34 @@ img {
     
 }
 
+/*Blog Section*/
+.container {
+    position: relative;
+    margin: 40px;
+    margin-left: 130px;
+    margin-right: 85px;
+    flex-direction: row;
+    display: flex;
+  }
+  .subcontainer{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    position: relative;
+    display: block;
+    float: left;
+    width: 250px;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0 10px 0;
+    color: #666;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+}
+
 #special-img {
     height: 500px;
     object-fit: cover;
