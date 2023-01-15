@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    display: grid;
 }
 
 a {
@@ -187,6 +188,8 @@ h2 {
 .box img {
     width: 402px;
     height: 442px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .box p {
@@ -276,15 +279,6 @@ h2 {
     height: 50%;
 }
 
-
-
-
-
-
-
-
-
-
 .text-box {
     padding: 15px;
     flex-direction: column;
@@ -315,11 +309,33 @@ h2 {
     padding-bottom: 5px;
     margin-top: 60px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 /* Review Section */
-.slider {}
-
+.slider {  
+   
+}
+.slide-points{
+    text-align: center;
+    padding-top: 70px;
+    height: 10px;
+}
+.slide-points button:hover {
+    background-color: #fbad28; 
+    padding: 5px;
+    outline: solid #fbad27 1px;;
+    cursor: pointer;
+  }
+.slide-points button{
+    border-radius: 100%;
+    padding: 3px;
+    border: 2.5px solid white;
+    background: #858585;
+    outline: solid #858585 1px;
+    margin-right: 5px;
+    
+}
 .slider .slide {
     margin: 0 auto;
     width: 500px;
@@ -351,6 +367,12 @@ h2 {
     float: left;
     display: flex;
     flex-direction: column;
+}
+#point1 {
+    display: none;
+}
+#point3 {
+    display: none;
 }
 
 /* Banner section */
@@ -384,6 +406,16 @@ h2 {
     padding: 5px 20px;
     font-size: 12px;
 }
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hideform {
+    display: none;
+}
 
 /* Bottom Meniu section */
 
@@ -398,6 +430,8 @@ h2 {
 .bottom-meniu a {
     color: black;
     padding: 2px;
+    cursor: pointer;
+    
 }
 
 .redirecting {

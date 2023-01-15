@@ -5,6 +5,7 @@
     <title>Fusion Travel</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/2885e28ca5.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                 <div class="card">
                     <i class="fa-solid fa-plane fa-xl" style="color: #fbad28;"></i>
                     <h4>Best Price Guarantee</H4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                         praesentium voluptatum deleniti atque corrupti quos dolores</p>
                 </div>
                 <div class="card">
@@ -83,27 +84,27 @@
             <div class="boxes">
                 <div class="box">
                     <p>Thailand</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&4" alt="random pictures" title="Fusion Travel">
                 </div>
                 <div class="box">
                     <p>Australia</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&5" alt="random pictures" title="Fusion Travel">
                 </div>
                 <div class="box">
                     <p>Indonesia</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&6" alt="random pictures" title="Fusion Travel">
                 </div>
                 <div class="box">
                     <p>France</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&7" alt="random pictures" title="Fusion Travel">
                 </div>
                 <div class="box">
                     <p>Malaysia</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&8" alt="random pictures" title="Fusion Travel">
                 </div>
                 <div class="box">
                     <p>UAE</p>
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
+                    <img src="https://source.unsplash.com/random/autox400/?travel&9" alt="random pictures" title="Fusion Travel">
                 </div>
             </div>
         </div>
@@ -182,7 +183,43 @@
             <div class="slider">
                 <div class="slide">
                     <div class="picture">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures"
+                        <img src="https://source.unsplash.com/random/autox400/?travel&10" alt="random pictures"
+                            title="Fusion Travel">
+                    </div>
+                    <div class="review">
+                        <div>
+                            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et
+                                accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et accusamus et
+                                iusto
+                                odio dignissimos ducimus qui blanditiis </p>
+                        </div>
+                        <div>
+                            <h4 style="color:#fbad27; margin-bottom: -9px;">Dimitri Vegas</h4>
+                            <p>London, England</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="point1">
+                    <div class="picture">
+                        <img src="https://source.unsplash.com/random/autox400/?travel&11" alt="random pictures"
+                            title="Fusion Travel">
+                    </div>
+                    <div class="review">
+                        <div>
+                            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et
+                                accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et accusamus et
+                                iusto
+                                odio dignissimos ducimus qui blanditiis </p>
+                        </div>
+                        <div>
+                            <h4 style="color:#fbad27; margin-bottom: -9px;">Dimitri Vegas</h4>
+                            <p>London, England</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="point3">
+                    <div class="picture">
+                        <img src="https://source.unsplash.com/random/autox400/?travel&12" alt="random pictures"
                             title="Fusion Travel">
                     </div>
                     <div class="review">
@@ -199,17 +236,34 @@
                     </div>
                 </div>
             </div>
+            <div class="slide-points">    
+                <button  id="slide-point1"></button>
+                <button  id="slide-point2"></button>
+                <button  id="slide-point3"></button> 
+            </div>       
         </div>
     </div>
 
     <!-- Special discount Section -->
+    <div class="center hideform">
+        <button id="close" style="float: right;">X</button>
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <div class="banner">
         <div class="main">
-            <p>Get special discount on your first jurney</p>
-            <a href="https://google.com">Book now</a>
+            <p>Get special discount on your first jurney</p>   
+            <button class="button2" id="show">Book now</button>
         </div>
     </div>
-
+    <script src="styles/index.js"></script>
     <!-- Bottom Meniu Section -->
     <div class="main">
         <div class="section">
@@ -239,6 +293,7 @@
     </div>
     <p style="text-align: center; padding-bottom: 30px;">Copyright@Para 2022, All Rights Reserved</p>
     </div>
+  
 </body>
 
 </html>
