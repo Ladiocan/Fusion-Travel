@@ -5,12 +5,11 @@
     <title>Fusion Travel</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/2885e28ca5.js" crossorigin="anonymous"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- Header, Hero -->
-    <div class="full-width section image-bg" style="background-image: url(https://source.unsplash.com/random/?travel);">
+    <div class="full-width section image-bg" style="background-image: url(https://source.unsplash.com/random/?travel);">   
         <div class="main">
             <div class="main-menu">
                 <div class="top-left">
@@ -199,71 +198,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide" id="point1">
+                <div class="slide">
                     <div class="picture">
                         <img src="https://source.unsplash.com/random/autox400/?travel&11" alt="random pictures"
                             title="Fusion Travel">
                     </div>
                     <div class="review">
                         <div>
-                            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et
-                                accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et accusamus et
-                                iusto
-                                odio dignissimos ducimus qui blanditiis </p>
+                            <p>  At ccusamus et iusto odio dignissimos vero eos et accusamus et iusto odio dignissimos 
+                                ducimus qui blanditiis At vero eos et accusamus et iusto odio dignissimos
+                                 ducimus qui blanditiis At vero eos et accusamus et iusto
+                            </p>
                         </div>
                         <div>
-                            <h4 style="color:#fbad27; margin-bottom: -9px;">Dimitri Vegas</h4>
-                            <p>London, England</p>
+                            <h4 style="color:#fbad27; margin-bottom: -9px;">Mario Ferro</h4>
+                            <p>Madrid, Spain</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide" id="point3">
+                <div class="slide">
                     <div class="picture">
                         <img src="https://source.unsplash.com/random/autox400/?travel&12" alt="random pictures"
                             title="Fusion Travel">
                     </div>
                     <div class="review">
                         <div>
-                            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et
+                            <p> odio dignissimos ducimus qui blanditiis At vero eos et accusamus et iusto 
+                                odio dignissimos ducimus qui blanditiis At vero eos et iusto
                                 accusamus et iusto odio dignissimos ducimus qui blanditiis At vero eos et accusamus et
-                                iusto
-                                odio dignissimos ducimus qui blanditiis </p>
+                            </p>
                         </div>
                         <div>
-                            <h4 style="color:#fbad27; margin-bottom: -9px;">Dimitri Vegas</h4>
-                            <p>London, England</p>
+                            <h4 style="color:#fbad27; margin-bottom: -9px;">Muller Dieter</h4>
+                            <p>Berlin, Germany</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slide-points">    
-                <button  id="slide-point1"></button>
-                <button  id="slide-point2"></button>
-                <button  id="slide-point3"></button> 
+                <button  id="slide-point" onclick="currentSlide(1)"></button>
+                <button  id="slide-point" onclick="currentSlide(2)"></button>
+                <button  id="slide-point" onclick="currentSlide(3)"></button> 
             </div>       
         </div>
     </div>
 
     <!-- Special discount Section -->
     <div class="center hideform">
-        <button id="close" style="float: right;">X</button>
-        <form action="/action_page.php">
-            First name:<br>
-            <input type="text" name="firstname">
-            <br>
-            Last name:<br>
-            <input type="text" name="lastname">
-            <br><br>
-            <input type="submit" value="Submit">
+        <form>
+            Rooms:
+            <input type="text" name="lastname" id="room">
+            Nights:
+            <input type="text" name="firstname" id="night">
+            Persons:
+            <input type="text" name="lastname" id="person">
+            <button type="button" onclick="calculatePrice()">Submit</button>
+            Price:
+            <span type="number" id="result"></span>
         </form>
     </div>
     <div class="banner">
         <div class="main">
-            <p>Get special discount on your first jurney</p>   
-            <button class="button2" id="show">Book now</button>
+            <p>Calculate price for your next trip</p>   
+            <button class="button2" onclick="openForm()">Calculate price</button>
         </div>
     </div>
-    <script src="styles/index.js"></script>
     <!-- Bottom Meniu Section -->
     <div class="main">
         <div class="section">
@@ -293,7 +292,7 @@
     </div>
     <p style="text-align: center; padding-bottom: 30px;">Copyright@Para 2022, All Rights Reserved</p>
     </div>
-  
+    <script src="index.js"></script>
 </body>
 
 </html>
