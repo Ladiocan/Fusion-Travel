@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.bg-orange-500 {
+    background-color: #FF6B35;
+}
+
+.hover\:bg-orange-600:hover {
+    background-color: #E65A2E;
+}
+
+.text-orange-500 {
+    color: #FF6B35;
+}
+
+.hover\:text-orange-500:hover {
+    color: #FF6B35;
+}
+
+.bg-gray-400 {
+    background-color: #9A9A9A;
+}
+
+.plane-outline {
+    -webkit-text-stroke: 2.5px #f97316;
+    color: transparent;
+  }
+  
+  .rotate-plane {
+    transform: rotate(-30deg);
+    display: inline-block;
+  }
+  
+  

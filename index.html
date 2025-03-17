@@ -1,212 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion Travel</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://kit.fontawesome.com/2885e28ca5.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-    <!-- Header, Hero -->
-    <div class="full-width image-bg" style="background-image: url(https://source.unsplash.com/random/?travel);">
-        <div class="main">
-            <div class="main-menu">
-                <div class="top-left">
-                    <a href="http://www.google.com">Home</a>
-                    <a href="http://www.google.com">Services</a>
-                    <a href="http://www.google.com">About Us</a>
-                    <a href="http://www.google.com">Our Clients</a>
-                    <a href="http://www.google.com">Blog</a>
-                    <a href="http://www.google.com">Contact us</a>
-                </div>
-                <div class="top-right">
-                    <i class="fa-solid fa-phone" style="color: #fff"></i>
-                    <a href="tel://+40749680770">Hotline: +40 749 687 770</a>
+<body class="font-sans bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-400 text-white text-sm">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex justify-between items-center py-4">
+                <ul class="flex flex-wrap gap-4 md:gap-6 uppercase font-semibold text-xs md:text-sm">
+                    <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Services</a></li>
+                    <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Our Clients</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Blog</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+                </ul>
+                <!-- hotline aliniat mai bine -->
+                <div class="flex items-center space-x-2 text-sm">
+                    <span>📞</span>
+                    <span>Hotline: +0040749680770</span>
                 </div>
             </div>
-            <div class="hero">
-                <div class=" hero-content">
-                    <h1>Fusion Travel</h1>
-                    <p>Lets Discover The World Together</p>
-                    <a href="#">Planifica excursia ta</a>
-                </div>
+            <!-- hr limitat la container -->
+            <hr class="border-gray-300 opacity-50">
+        </div>
+    </nav>    
+
+    <!-- Hero Section -->
+    <header class="relative h-[80vh] bg-gray-400 flex items-center justify-center overflow-hidden">
+        <video autoplay muted loop id="heroVideo" class="absolute top-0 left-0 w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative text-center text-white z-10 max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Fusion Travel</h1>
+            <p class="mb-6 text-base sm:text-lg">Let's Discover The World Together</p>
+            <button class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-full font-semibold text-sm">Plan Your Trip</button>
+        </div>
+        <!-- Buton Watch Intro Video -->
+        <div class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 flex items-center space-x-3 z-10 cursor-pointer">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 border-2 border-white rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </div>
+            <div>
+                <p class="text-[10px] sm:text-xs uppercase font-semibold text-white leading-tight">Watch</p>
+                <p class="text-xs sm:text-sm font-bold text-white">INTRO VIDEO</p>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Welcome Section -->
-    <div class="full-width">
-        <div class="main">
-            <div class="description">
-                <h2 class="h2">Welcome to Fusion</h2>
-                <p class="paragraf">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque <br> corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident, similique sunt in <br> culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-            </div>
-            <div class="parent">
-                <div class="child">
-                    <i class="fa-solid fa-plane fa-xl" style="color: #fbad28;"></i>
-                    <h4>Best Price Guarantee</H4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis
-                        praesentium voluptatum deleniti atque corrupti quos dolores</p>
-                </div>
-                <div class="child">
-                    <i class="fa-solid fa-heart fa-xl" style="color:#fbad28"></i>
-                    <H4>Best Travel Agency</H4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum deleniti atque corrupti quos dolores</p>
-                </div>
-                <div class="child">
-                    <i class="fa-solid fa-star fa-xl" style="color:#fbad28"></i>
-                    <H4>Trust & Safety</H4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum deleniti atque corrupti quos dolores</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Find Your Destination Section -->
-    <div class="full-width">
-        <div class="main">
-            <div class="description">
-                <h2 class="h2">Find Your Destination</h2>
-                <p>Most popular places are waiting for you</p>
-            </div>
-            <div class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input class="searchbar" type="search" placeholder="Search...">
-            </div>
-            <div class="parent">
-                    <div class="image-child">
-                        <p>Thailand</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="image-child">
-                        <p>Australia</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="image-child">
-                        <p>Indonesia</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                </div>
-                <div class="parent" id="special-parent">    
-                    <div class="image-child">
-                        <p>France</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="image-child">
-                        <p>Malaysia</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="image-child">
-                        <p>UAE</p>
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                </div>    
-            </div>        
-    </div>
-
-
-    <!-- Blog Section -->
-    <div class="full-width">
-        <div class="main">
-            <div class="description">
-                <h2 class="h2">Latest News From Blog</h2>
-                <p>See whats people are sharing there thoughts</p>
-            </div>
-            <div class="container">
-                <div class="subcontainer" style="width: 400px;">
-                     <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel" height="300px">
-                    </div>           
-                    <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                        <h5>The state of liberty travel</h5>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div> 
-                </div>
-                <div class="subcontainer" style="width: 200px;">
-                    <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                        <h5>The state of liberty travel</h5>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-                <div class="subcontainer" style="width: 200px;">
-                    <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    </div>
-                    <div class="box">
-                        <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                        <h5>The state of liberty travel</h5>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>    
-            </div>
-        <button class="button2">Keep reading</button>
-        </div>
-    </div>   
+    <!-- Welcome to Fusion -->
+    <section class="py-20 bg-white pb-10">
+        <div class="max-w-[900px] mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-[32px] font-normal tracking-wide mb-4">Welcome to Fusion</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-12 text-sm md:text-base">Nam consectetur elementum neque vitae condimentum. Aenean dignissim, turpis et tincidunt finibus, massa purus malesuada metus.</p>
     
-<!-- Review Section -->
-    <div class="full-width">
-        <div class="main">
-            <div class="description">
-                <h2>What our clients say</h2>
-                <p>See whats people are sharing there thoughts</p>
-            </div>
-            <div class="parent">
-                <div class="image-child" id="special-parent">
-                    <img src="https://source.unsplash.com/random/?travel" alt="random pictures" title="Fusion Travel">
-                    <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+            <!-- Carousel cu margini vizibile -->
+            <div class="relative flex justify-center items-center gap-6">
+                <!-- Card 1 -->
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="0">
+                    <div class="icon mb-4">
+                        <!-- ICON Avion bold -->
+                        <i class="fa-solid fa-plane fa-2xl plane-outline rotate-plane"></i>                                    
+                    </div>
+                    <h3 class="font-bold mb-2">Best Price Guarantee</h3>
+                    <p class="text-sm text-gray-600">SpaceTeam bootstrapping user centered design sticky note convergence fund</p>
+                </div>
+            
+                <!-- Card 2 activ -->
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-xl transition-all duration-300 z-10 text-left" data-index="1">
+                    <div class="icon mb-4">
+                        <!-- ICON Heart subtire -->
+                        <svg class="w-7 h-7 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">Best Travel Agency</h3>
+                    <p class="text-sm text-gray-600">User story Steve Jobs iterate human-centered design iterate pair programming 360 campaign.</p>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="2">
+                    <div class="icon mb-4">
+                        <!-- ICON Star subtire -->
+                        <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <h3 class="font-bold mb-2">Trust & Safety</h3>
+                    <p class="text-sm text-gray-600">Thought leader cortado viral earned media long shadow actionable insight</p>
+                </div>
+            </div>            
+    
+            <!-- BULLETS custom -->
+            <div class="flex justify-center space-x-5 mt-8 items-center">
+                <!-- Bullet INACTIV -->
+                <span class="dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="0">
+                    <div class="bullet relative flex items-center justify-center w-full h-full">
+                        <span class="inner w-[8px] h-[8px] bg-gray-500 rounded-full z-10"></span>
+                        <span class="circle absolute rounded-full border border-gray-500" style="width: 57%; height: 57%;"></span>
+                    </div>
+                </span>
+            
+                <!-- Bullet ACTIV -->
+                <span class="dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="1">
+                    <div class="bullet relative flex items-center justify-center w-full h-full">
+                        <span class="inner w-[20px] h-[20px] bg-orange-500 rounded-full z-10"></span>
+                        <span class="circle absolute rounded-full border border-orange-500 w-full h-full"></span>
+                    </div>
+                </span>
+            
+                <!-- Bullet INACTIV -->
+                <span class="dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="2">
+                    <div class="bullet relative flex items-center justify-center w-full h-full">
+                        <span class="inner w-[8px] h-[8px] bg-gray-500 rounded-full z-10"></span>
+                        <span class="circle absolute rounded-full border border-gray-500" style="width: 57%; height: 57%;"></span>
+                    </div>
+                </span>
+            </div>                                                                                                                     
+        </div>
+    </section>
+    <hr class="max-w-[1080px] mx-auto border-gray-300 opacity-50 my-2">
+
+    <!-- Find Your Destination -->
+    <section class="py-20 bg-white pb-10">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16 text-center relative">
+            <h2 class="text-4xl tracking-wide font-normal">Find Your Destination</h2>
+            <p class="text-gray-500">Most Popular Places Are Waiting For You</p>
+            <div class="flex justify-center my-8 ml-10">
+                <div class="flex items-center gap-2 ml-10">
+                    <i class="fa-solid fa-magnifying-glass text-gray-600 fa-sm"></i>
+                    <input type="text" placeholder="Search..." class="focus:outline-none text-gray-700 text-sm bg-transparent placeholder:text-gray-600">
                 </div>
             </div>
+            
+            <!-- Gridul carusel -->
+            <div class="relative max-w-[1080px] mx-auto flex justify-center items-center">
+
+                <!-- Săgeata stânga -->
+                <button id="prevBtn" class="absolute left-[-100px] top-1/2 -translate-y-1/2">
+                    <i class="fa-solid fa-arrow-left text-orange-500 text-2xl"></i>
+                </button>
+            
+                <!-- Gridul -->
+                <div id="destinationGrid" class="grid grid-cols-3 grid-rows-2 gap-6 w-full"></div>
+            
+                <!-- Săgeata dreapta -->
+                <button id="nextBtn" class="absolute right-[-100px] top-1/2 -translate-y-1/2">
+                    <i class="fa-solid fa-arrow-right text-orange-500 text-2xl"></i>
+                </button>
+            
+            </div>
+                   
+        </div>
+    </section>    
+    <hr class="max-w-[1200px] mx-auto border-gray-300 opacity-50 my-2">
+
+    <!-- Latest News From Blog -->
+<section class="py-20 bg-white overflow-hidden pb-10">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16 text-center">
+        <h2 class="text-4xl tracking-wide font-normal">Latest News From Blog</h2>
+        <p class="text-gray-500">See What People Are Sharing Their Thoughts</p>
+
+        <!-- GRID MASONRY CUSTOM -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+            <!-- COL 1 -->
+            <div class="flex flex-col gap-8">
+                <!-- Box 1 -->
+                <div class="bg-gray-300 overflow-hidden h-[300px] md:h-[400px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg" class="w-full h-full object-cover" />
+                </div>
+                <!-- Box 2 -->
+                <div class="flex bg-white overflow-hidden shadow h-[160px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <div class="w-1/2 p-4 flex flex-col justify-center">
+                        <h3 class="font-bold text-sm mb-2">Most Beautiful Place In The World - Istanbul</h3>
+                        <p class="text-xs text-gray-600">Venture capital food-truck minimum viable product...</p>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- COL 2 -->
+            <div class="flex flex-col gap-8 pl-4 pr-4">
+                <!-- Box 3 -->
+                <div class="flex flex-col bg-white overflow-hidden shadow h-[300px] md:h-[400px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <div class="h-1/2">
+                        <img src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="h-1/2 p-4 flex flex-col justify-center">
+                        <h3 class="font-bold text-sm mb-2">The Statue Of Liberty Travel</h3>
+                        <p class="text-xs text-gray-600">SpaceTeam waterfall is so 2000 and late quantitative.</p>
+                    </div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bg-gray-300 overflow-hidden h-[160px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/2803107/pexels-photo-2803107.jpeg" class="w-full h-full object-cover" />
+                </div>
+            </div>
+
+            <!-- COL 3 -->
+            <div class="flex flex-col gap-8">
+                <!-- Box 5 -->
+                <div class="bg-gray-300 overflow-hidden h-[200px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/3601424/pexels-photo-3601424.jpeg" class="w-full h-full object-cover" />
+                </div>
+                <!-- Box 6 -->
+                <div class="flex flex-col bg-white overflow-hidden shadow h-[300px] md:h-[360px] group transition-transform hover:scale-105 hover:shadow-lg">
+                    <div class="h-1/2">
+                        <img src="https://images.pexels.com/photos/3822970/pexels-photo-3822970.jpeg" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="h-1/2 p-4 flex flex-col justify-center">
+                        <h3 class="font-bold text-sm mb-2">The Best Natural Paradise - Shimla</h3>
+                        <p class="text-xs text-gray-600">Integrate big data convergence human-centered design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buton -->
+        <button class="mt-10 px-8 py-3 bg-orange-500 text-white rounded-full text-sm font-semibold hover:bg-orange-600">Keep Reading</button>
+    </div>
+</section>
+<hr class="max-w-[1200px] mx-auto border-gray-300 opacity-50 my-2">
+
+<!-- Testimonials Section -->
+<section class="py-20 bg-white relative overflow-hidden">
+    <div class="max-w-[900px] mx-auto px-4 md:px-8 text-center relative">
+        <h2 class="text-4xl tracking-wide font-normal mb-2">What Our Client Says</h2>
+        <p class="text-gray-500 mb-12">People’s sharing their thought about our works</p>
+
+        <!-- Ghilimele -->
+        <div class="absolute left-4 pt-20 -translate-y-1/2 text-[150px] text-gray-200 opacity-50 select-none z-0">&ldquo;</div>
+        <div class="absolute right-4 bottom-[-100px] text-[150px] text-gray-200 opacity-50 select-none z-0">&rdquo;</div>
+
+        <!-- Carousel -->
+        <div class="relative flex justify-center items-center gap-6 z-10">
+            <!-- Item 1 -->
+            <div class="testimonial-card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[70%] bg-white shadow-xl transition-all duration-300 z-10 text-left" data-index="0">
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" class="w-full h-full object-cover" alt="Person 1">
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-4">Integrate 360 campaign viral disrupt pair programming latte paradigm hacker 360 campaign cortado bootstrapping.</p>
+                        <h4 class="font-bold text-orange-500 text-sm">Dimitri Vegas</h4>
+                        <p class="text-xs text-gray-500">London, England</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="testimonial-card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[70%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left hidden" data-index="1">
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" class="w-full h-full object-cover" alt="Person 2">
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-4">Ship it integrate prototype fund human-centered design integrate big data convergence.</p>
+                        <h4 class="font-bold text-orange-500 text-sm">Jane Doe</h4>
+                        <p class="text-xs text-gray-500">Paris, France</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="testimonial-card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[70%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left hidden" data-index="2">
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 overflow-hidden rounded-md flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" class="w-full h-full object-cover" alt="Person 3">
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-4">Thought leader cortado viral earned media long shadow actionable insight bootstrapping campaign.</p>
+                        <h4 class="font-bold text-orange-500 text-sm">Carlos Santana</h4>
+                        <p class="text-xs text-gray-500">Madrid, Spain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BULLETS custom -->
+        <div class="flex justify-center space-x-5 mt-8 items-center z-10 relative">
+            <span class="testimonial-dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="0"></span>
+            <span class="testimonial-dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="1"></span>
+            <span class="testimonial-dot cursor-pointer w-7 h-7 flex items-center justify-center" data-target="2"></span>
         </div>
     </div>
+</section>
+
     
-    <!-- Special discount Section -->
-            <div class="full-width">
-                <div class="yellow-parent">
-                    <p style="color: #ffffff">Get special discount on your first jurney</p>
-                    <button class="button2">Book now</button>
+    <!-- Special Discount FULL WIDTH -->
+<section class="py-12 bg-orange-500 text-white w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-20">
+        <!-- Text -->
+        <h2 class="text-2xl md:text-3xl text-center md:text-left mb-6 md:mb-0">Get special discount on your first journey</h2>
+        <!-- Buton -->
+        <button class="px-8 py-3 border border-white text-white rounded-full text-sm font-semibold hover:bg-white hover:text-orange-500 transition-all">Book Now</button>
+    </div>
+</section>
+
+    </footer><!-- Footer -->
+    <footer class="py-14 bg-white text-gray-800 text-sm">
+        <div class="max-w-[1200px] mx-auto md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+    
+            <!-- About Us -->
+            <div>
+                <h4 class="font-semibold mb-3">About Us</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Blog</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Address -->
+            <div>
+                <h4 class="font-semibold mb-3">Address</h4>
+                <p>4433 Heavner Court</p>
+                <p>Plainview, New York</p>
+            </div>
+    
+            <!-- Contact Us -->
+            <div>
+                <h4 class="font-semibold mb-3">Contact Us</h4>
+                <p>Email: laci.ciocan@gmail.com</p>
+                <p>Cell: +0040749680770</p>
+            </div>
+    
+            <!-- Follow Us -->
+            <div>
+                <h4 class="font-semibold mb-3">Follow Us</h4>
+                <div class="flex space-x-3 mt-2">
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-600 text-white hover:bg-orange-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-600 text-white hover:bg-orange-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-orange-500 text-white"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-    <!-- Bottom Meniu Section -->
-
-    <div class="full-width">
-        <div class="main">   
-            <div class="parent">  
-                <div>
-                    <h3>About Us</h3>
-                    <p>About us</p>
-                    <p>Blog</p>
-                    <p>Contact us</p>
-                </div>
-                <div>
-                    <h3>Adress</h3>
-                    <p>4443 Heavner Court <br> Plainview, New York</p>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <p>Email: help@agency.com <br> Cell: +40749680770</p>
-                </div>
-                <div>
-                    <h3>Follow Us</h3>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>    
+    
         </div>
-    </div>    
-        <p style="text-align: center;">Copyright@Para 2022, All Rights Reserved</p>
-</div>   
+    
+        <!-- Divider -->
+        <hr class="max-w-[1200px] mx-auto border-gray-300 opacity-50 my-2">
+    
+        <!-- Copyright -->
+        <div class="text-center pt-10 text-xs text-gray-600">
+            Copyright @Parag 2025, All Rights Reserved
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
 </body>
 
 </html>
+
