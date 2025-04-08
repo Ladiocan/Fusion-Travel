@@ -3,20 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fusion Travel</title>
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="font-sans bg-white text-gray-900">
+<body class="font-sans bg-white text-gray-900 overflow-x-hidden">
 
     <!-- Navbar -->
-    <nav class="bg-gray-400 text-white text-sm">
-        <div class="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16">
-            <div class="flex justify-between items-center py-4">
-                <ul class="flex flex-wrap gap-4 md:gap-6 uppercase font-semibold text-xs md:text-sm">
+    <nav class="bg-gray-400 text-white text-sm w-screen max-w-[100vw]">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16 w-full">
+            <div class="flex flex-col md:flex-row justify-between items-center py-4 gap-4">
+                <div class="w-full md:w-auto flex justify-between items-center">
+                    <button id="mobileMenuButton" class="md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="flex items-center space-x-2 text-sm md:hidden">
+                        <span>📞</span>
+                        <span>Hotline: +0040749680770</span>
+                    </div>
+                </div>
+                <ul id="mobileMenu" class="hidden w-full md:w-auto md:flex flex-wrap gap-4 md:gap-6 uppercase font-semibold text-xs md:text-sm">
                     <li><a href="#" class="hover:text-orange-500">Home</a></li>
                     <li><a href="#" class="hover:text-orange-500">Services</a></li>
                     <li><a href="#" class="hover:text-orange-500">About Us</a></li>
@@ -24,7 +33,7 @@
                     <li><a href="#" class="hover:text-orange-500">Blog</a></li>
                     <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
                 </ul> 
-                <div class="flex items-center space-x-2 text-sm">
+                <div class="hidden md:flex items-center space-x-2 text-sm">
                     <span>📞</span>
                     <span>Hotline: +0040749680770</span>
                 </div>
@@ -34,12 +43,12 @@
     </nav>    
 
     <!-- Hero Section -->
-    <header class="relative h-[80vh] bg-gray-400 flex items-center justify-center overflow-hidden">
+    <header class="relative h-[50vh] md:h-[80vh] bg-gray-400 flex items-center justify-center overflow-hidden w-screen max-w-[100vw]">
         <video autoplay muted loop id="heroVideo" class="absolute top-0 left-0 w-full h-full object-cover"></video>
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative text-center text-white z-10 max-w-[1200px] mx-auto px-4 md:px-8 lg:px-16">
-            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Fusion Travel</h1>
-            <p class="mb-6 text-base sm:text-lg">Let's Discover The World Together</p>
+        <div class="relative text-center text-white z-10 max-w-[1200px] w-full mx-auto px-4 md:px-8 lg:px-16">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Fusion Travel</h1>
+            <p class="mb-6 text-sm sm:text-base md:text-lg">Let's Discover The World Together</p>
             <button class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-full font-semibold text-sm">Plan Your Trip</button>
         </div> 
         <div class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 flex items-center space-x-3 z-10 cursor-pointer">
@@ -60,9 +69,9 @@
         <div class="max-w-[900px] mx-auto px-4 md:px-8 text-center">
             <h2 class="text-[32px] font-normal tracking-wide mb-4">Welcome to Fusion</h2>
             <p class="text-gray-500 max-w-2xl mx-auto mb-12 text-sm md:text-base">Nam consectetur elementum neque vitae condimentum. Aenean dignissim, turpis et tincidunt finibus, massa purus malesuada metus.</p> 
-            <div class="relative flex justify-center items-center gap-6">
+            <div class="relative flex flex-col md:flex-row justify-center items-center gap-6 px-4">
                 <!-- Card 1 -->
-                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="0">
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-full md:w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="0">
                     <div class="icon mb-4">                       
                         <i class="fa-solid fa-plane fa-2xl plane-outline rotate-plane"></i>                                    
                     </div>
@@ -70,7 +79,7 @@
                     <p class="text-sm text-gray-600">SpaceTeam bootstrapping user centered design sticky note convergence fund</p>
                 </div> 
                 <!-- Card 2 activ -->
-                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-xl transition-all duration-300 z-10 text-left" data-index="1">
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-full md:w-[30%] bg-white shadow-xl transition-all duration-300 z-10 text-left" data-index="1">
                     <div class="icon mb-4"> 
                         <svg class="w-7 h-7 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                     </div>
@@ -78,7 +87,7 @@
                     <p class="text-sm text-gray-600">User story Steve Jobs iterate human-centered design iterate pair programming 360 campaign.</p>
                 </div> 
                 <!-- Card 3 -->
-                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="2">
+                <div class="card cursor-pointer p-6 pb-10 pt-10 rounded-lg w-full md:w-[30%] bg-white shadow-sm transition-all duration-300 hover:shadow-md text-left" data-index="2">
                     <div class="icon mb-4"> 
                         <svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
@@ -277,18 +286,18 @@
 
     
     <!-- Special Discount -->
-    <section class="py-12 bg-orange-500 text-white w-full">
-        <div class="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-20">
-            <h2 class="text-2xl md:text-3xl text-center md:text-left mb-6 md:mb-0">Get special discount on your first journey</h2>
-            <button class="px-8 py-3 border border-white text-white rounded-full text-sm font-semibold hover:bg-white hover:text-orange-500 transition-all">Book Now</button>
+    <section class="py-8 md:py-12 bg-orange-500 text-white w-full">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-20 gap-4">
+            <h2 class="text-xl md:text-3xl text-center md:text-left">Get special discount on your first journey</h2>
+            <button class="px-6 py-2 md:px-8 md:py-3 border border-white text-white rounded-full text-sm font-semibold hover:bg-white hover:text-orange-500 transition-all">Book Now</button>
         </div>
     </section>
 
     <footer class="py-14 bg-white text-gray-800 text-sm"> 
-        <div class="max-w-[1200px] mx-auto md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 text-left">
     
             <!-- About Us -->
-            <div>
+            <div class="mb-4 md:mb-0">
                 <h4 class="font-semibold mb-3">About Us</h4>
                 <ul class="space-y-2">
                     <li><a href="#" class="hover:text-orange-500">About Us</a></li>
@@ -298,21 +307,21 @@
             </div>
     
             <!-- Address -->
-            <div>
+            <div class="mb-4 md:mb-0">
                 <h4 class="font-semibold mb-3">Address</h4>
                 <p>4433 Heavner Court</p>
                 <p>Plainview, New York</p>
             </div>
     
             <!-- Contact Us -->
-            <div>
+            <div class="mb-4 md:mb-0">
                 <h4 class="font-semibold mb-3">Contact Us</h4>
                 <p>Email: laci.ciocan@gmail.com</p>
                 <p>Cell: +0040749680770</p>
             </div>
     
             <!-- Follow Us -->
-            <div>
+            <div class="mb-4 md:mb-0">
                 <h4 class="font-semibold mb-3">Follow Us</h4>
                 <div class="flex space-x-3 mt-2">
                     <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-600 text-white hover:bg-orange-500"><i class="fab fa-twitter"></i></a>
@@ -327,6 +336,13 @@
         </div>
     </footer>     
     <script src="script.js"></script>
+    <script>
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body> 
 </html>
-
